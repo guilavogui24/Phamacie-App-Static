@@ -532,12 +532,13 @@ Table-data
 }
 #content main .table-data .order table tr td .status.completed {
 	background: var(--green);
+	color: var(--grey);
 }
 #content main .table-data .order table tr td .status.process {
-	background: var(--yellow);
+	background: var(--light-yellow);
 }
 #content main .table-data .order table tr td .status.pending {
-	background: var(--orange);
+	background: var(--light-green);
 }
 
 
@@ -565,7 +566,7 @@ Table-data
 	border-left: 10px solid var(--green);
 }
 #content main .table-data .todo .todo-list li.not-completed {
-	border-left: 10px solid var(--orange);
+	border-left: 10px solid var(--light-green);
 }
 #content main .table-data .todo .todo-list li:last-child {
 	margin-bottom: 0;
@@ -614,7 +615,7 @@ Table-data
 .badge .titre{
     display: flex;
     justify-content: space-between;
-    border-bottom:1px solid rgb(46, 44, 44);
+    border-bottom:1px solid var(--dark-grey);
     padding-bottom: 15px;
 }
 
@@ -625,10 +626,43 @@ Table-data
 
 }
 
+/*---------------------------------
+ Form wrapper
+ ----------------------------------*/
+ .form-wrapper{
+	width: fit-content;
+	display: flex;
+	padding: 2rem 1rem;
+	background-color: #fff;
+	margin: 50px  0 auto  0;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+	font-family: var(--poppins);
+}
 
 
+.form-wrapper form input{
+	width:45rem;
+	display: flex;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: #e4e4e4;
+}
 
-
+.form-wrapper form textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background: #e4e4e4;
+	font-family: var(--poppins);
+}
 /* MAIN */
 /* CONTENT */
 
@@ -636,7 +670,12 @@ Table-data
 /*---------------------------------
  Inscription & Connexion
  ----------------------------------*/
-
+ .container-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .wrapper{
 	width: 330px;
 	padding: 2rem 1rem;
@@ -660,7 +699,7 @@ Table-data
 	border: 1px solid #fff;
 	padding: 12px 20px;
 	margin-bottom: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background: #e4e4e4;
 }
 
@@ -668,7 +707,7 @@ Table-data
 	font-size: 1rem;
 	margin-top: 1.8rem;
 	padding: 10px 0;
-	border-radius: 20px;
+	border-radius: 10px;
 	outline: none;
 	border: none;
 	width: 90%;

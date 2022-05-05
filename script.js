@@ -128,7 +128,7 @@ const pieChart = new Chart(pieCanvas, {
         ],
         datasets: [{
             label: 'Stock',
-            data: [10, 5, 15, 3, 25 ],
+            data: [10, 5, 2, 3, 25 ],
             backgroundColor: [
                 "green",
                 "ligthgreen"
