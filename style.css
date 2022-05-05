@@ -348,18 +348,33 @@ body {
 	color: var(--green);
 	pointer-events: unset;
 }
-#content main .head-title .btn-download {
+
+ .btn{
 	height: 36px;
 	padding: 0 16px;
 	border-radius: 10px;
-	background: var(--green);
 	color: var(--light);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	grid-gap: 10px;
 	font-weight: 500;
+	width:fit-content;
 }
+.btn-download {
+	background: var(--green);
+}
+.btn-add{
+	background-color: var(--green);
+}
+.btn-edite{
+	background-color: var(--green);
+}
+.btn-delete{
+	background-color: var(--red);
+}
+
+
 
 
 
@@ -555,6 +570,65 @@ Table-data
 #content main .table-data .todo .todo-list li:last-child {
 	margin-bottom: 0;
 }
+
+
+
+
+
+/*------------------------------
+ badges 
+--------------------------------*/
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.badge{
+    width: 48%;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.long{
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.long p{
+	padding:  1rem 0;
+}
+
+
+.badge .titre{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgb(46, 44, 44);
+    padding-bottom: 15px;
+}
+
+.badge .value{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+
+}
+
+
+
+
+
 /* MAIN */
 /* CONTENT */
 
@@ -667,6 +741,15 @@ Médias Queries
 	#content nav .nav-link {
 		display: none;
 	}
+
+	.badges {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.badge{
+		width: 100%;
+	}
 }
 
 
@@ -716,5 +799,24 @@ Médias Queries
 	}
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
+	}
+
+	.badges {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.badge{
+		width: 100%;
+	}
+
+	.value {
+		display: flex;
+		flex-direction: column;
+	}
+	.value div{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }

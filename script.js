@@ -98,7 +98,7 @@ const barChart = new Chart(barCanvas, {
     options: {
         scales:{
             y: {
-                suggestedMax: 1000,
+                suggestedMax: 900,
                 ticks: {
                     font: {
                         
