@@ -253,7 +253,7 @@ body {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	border-radius: 0 36px 36px 0;
+	border-radius: 0 10px 10px 0;
 	cursor: pointer;
 }
 #content nav .notification {
@@ -351,7 +351,7 @@ body {
 #content main .head-title .btn-download {
 	height: 36px;
 	padding: 0 16px;
-	border-radius: 36px;
+	border-radius: 10px;
 	background: var(--green);
 	color: var(--light);
 	display: flex;
@@ -373,7 +373,7 @@ body {
 #content main .box-info li {
 	padding: 24px;
 	background: var(--light);
-	border-radius: 36px;
+	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	grid-gap: 24px;
@@ -435,7 +435,7 @@ Chart-container
    width: 48%;
    box-shadow: var(--shadow);
    padding: 15px;
-   border-radius: 36px;
+   border-radius: 10px;
    background-color: var(--light);
 }
 
@@ -455,7 +455,7 @@ Table-data
 	
 }
 #content main .table-data > div {
-	border-radius: 36px;
+	border-radius: 10px;
 	background: var(--light);
 	padding: 24px;
 	overflow-x: auto;
@@ -694,7 +694,7 @@ Médias Queries
 	#content nav form.show .form-input button {
 		width: 36px;
 		height: 100%;
-		border-radius: 0 36px 36px 0;
+		border-radius: 0 10px 10px 0;
 		color: var(--light);
 		background: var(--red);
 	}
