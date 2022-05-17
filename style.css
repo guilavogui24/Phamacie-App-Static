@@ -373,9 +373,17 @@ body {
 .btn-delete{
 	background-color: var(--red);
 }
-
-
-
+.btn-secondary{
+	border: 1px solid;
+	border-color: var(--green);
+	color: var(--green);
+}
+.btn-secondary:hover{
+	background-color: var(--green);
+	color: var(--light);
+	font-weight: 300;
+	transition:500ms;
+}
 
 
 
@@ -405,19 +413,19 @@ body {
 	
 }
 #content main .box-info li:nth-child(1) .bx {
-	background: var(--light-green);
+	/* background: var(--light-green); */
 	color: var(--green);
 }
 #content main .box-info li:nth-child(2) .bx {
-	background: var(--light-yellow);
+	/* background: var(--light-yellow); */
 	color: var(--green);
 }
 #content main .box-info li:nth-child(3) .bx {
-	background: var(--light-blue);
+	/* background: var(--light-blue); */
 	color: var(--green);
 }
 #content main .box-info li:nth-child(4) .bx {
-	background: var(--light-orange);
+	/* background: var(--light-orange); */
 	color: var(--green);
 }
 #content main .box-info li .text h3 {

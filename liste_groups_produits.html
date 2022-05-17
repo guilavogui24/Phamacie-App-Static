@@ -116,38 +116,75 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1> Inventaire <i class='bx bx-chevron-right' ></i>Liste Produits <i class='bx bx-chevron-right' ></i>Ajout produit</h1>
+					<h1>Liste des groupes de produits (04)</h1>
 					<ul class="breadcrumb">
 						<li>
-                            <a  href="#">*Tous les champs sont obligatoires, sauf mention (facultatif).</a>
+                            <a  href="#">Inventaire</a>
 							
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Liste des groupes de produits</a>
 						</li>
 					</ul>
 				</div>
-				>
+				<a href="ajout_group.html" class="btn btn-add">
+                    <i class='bx bx-plus'></i>
+					<span class="text">Ajouter un groupe</span>
+				</a>
 			</div>
-			
-			<section class="form-wrapper">
-				<form action="#">
-					<input type="text" placeholder="Nom du produit">
-					<input type="text" placeholder="Date d'expiration">
-					<input type="text" placeholder="Groupe de produit">
-					<input type="number" placeholder="Quantité en Chiffre">
-					<textarea name="Mode d'utilisation" placeholder="Mode d'utilisation" id="" cols="20" rows="6"></textarea>
-					<textarea name="Mode d'utilisation" placeholder="Mode d'utilisation" id="" cols="20" rows="8"></textarea>
-					     
-					<a href="#" class=" btn btn-secondary">
-						<i class='bx bxs-save' ></i>
-						<span class="text">Enregister</span>
-					</a>
-				</form>
-			</section>
-			
-			
-			
 
-		</main>
 		
+
+		
+
+			<!--------------------
+			Table Data
+			---------------------->
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Groupes</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Nom du groupe</th>
+								<th>N° du médicament</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Diététique et Nutrition</td>
+								<td>42</td>
+                                <td><a href="details_produit.html">Afficher les détails >></a> </td>
+							</tr>
+							<tr>
+								<td>Antiviraux.</td>
+								<td>152</td>
+                                <td><a href="details_produit.html">Afficher les détails >></a> </td>
+							</tr>
+							<tr>
+								<td>Médecine générique</td>
+								<td>12</td>
+                                <td><a href="details_produit.html">Afficher les détails >></a> </td>
+							</tr>
+							<tr>
+								<td>Médecine générique</td>
+								<td>152</td>
+                                <td><a href="details_produit.html">Afficher les détails >></a> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</main>
+		<!-- MAIN -->
 	</section>
 	<!-- CONTENT -->
 	
